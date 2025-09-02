@@ -21,7 +21,8 @@ const hideMobileSidebar = () => {
 // Muestra u oculta el sidebar para escritorio
 const toggleSidebarHide = () => {
 	hideBtnSidebar.classList.toggle("on");
-	sidebar.classList.toggle("offscreen");
+	sidebar.classList.toggle("offset");
+	footer.classList.toggle("static");
 }
 
 hideBtnSidebar.addEventListener("click", toggleSidebarHide);
